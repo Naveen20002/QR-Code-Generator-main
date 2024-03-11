@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"
+        integrity="sha512-ZDSPMa/JM1D+7kdg2x3BsruQ6T/JpJo3jWDWkCZsP+5yVyp1KfESqLI+7RqB5k24F7p2cV7i2YHh/890y6P6Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="code">
+        <form action="#" id="frm">
+            <div class="form-group">
+                <label for="url">Enter Website Link</label>
+                <input type="url" id="url" placeholder="Enter URL" required>
+            </div>
+
+            <div class="form-group">
+            <label for="size">Select your Size</label>
+            <select id="size">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300">300x300</option>
+                <option value="400">400x400</option>
+            </select>
+    </div>
+    <div class="form-single-group"> 
+        <label for="colorDark">Color Dark</label>
+        <input type="color" id="colorDark" value="#000000">
+    </div>
+    
+    <div class="form-single-group">
+        <label for="colorLight">Color Light</label>
+        <input type="color" id="colorLight" value="#ffffff">
+    </div>
+<button type="submit">Generate QR Code</button>
+    </form>
+    </div>
+    <div class="output">
+       <div id="qrcode"></div>
+       <img src="./images/Naveen QR.png" alt="">
+        <div id="loading"> 
+            <div id="spinner"></div>
+            <p>Please Wait</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
